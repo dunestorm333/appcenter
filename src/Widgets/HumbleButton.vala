@@ -32,7 +32,7 @@ public class AppCenter.Widgets.HumbleButton : Gtk.Grid {
             return _amount;
         }
         set {
-            _amount = value;
+            _amount = 0; // Set default app price to free.
             amount_button.label = get_amount_formatted (value, true);
             selection.custom_amount.value = value;
 
